@@ -1,0 +1,24 @@
+{
+  "name": "list-it-app",
+  "version": "1.0.0",
+  "description": "Create and store your personal lists directly in cloud.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KartikT900/list-it-app.git"
+  },
+  "keywords": [
+    "reactjs",
+    "javascript",
+    "html"
+  ],
+  "author": "Kartik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KartikT900/list-it-app/issues"
+  },
+  "homepage": "https://github.com/KartikT900/list-it-app#readme"
+}
