@@ -1,3 +1,4 @@
 .eslintrc.js
 config
 babel.config.js
+jest.config.js
