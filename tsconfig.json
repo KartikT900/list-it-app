@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
       "allowJs": true,
+      "baseUrl": "src",
       "checkJs": true,
       "esModuleInterop": true,
       "jsx": "react",
@@ -9,8 +10,9 @@
       "noImplicitAny": true,
       "removeComments": true,
       "preserveConstEnums": true,
+      "strictNullChecks": true,
       "sourceMap": true,
-      "target": "ES2021",
+      "target": "ES2021"
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules"]
