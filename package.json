@@ -8,7 +8,7 @@
     "start": "cross-env NODE_ENV=debug webpack serve --config config/webpack.config.ts",
     "pretest": "node config/pretest.config.js",
     "test": "jest --coverage --watchAll",
-    "test:ci": "jest --bail --changedSince=main --coverage=true",
+    "test:ci": "jest --bail --coverage=true",
     "prepare": "husky install"
   },
   "repository": {
