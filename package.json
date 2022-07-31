@@ -4,6 +4,7 @@
   "description": "Create and store your personal lists directly in cloud.",
   "main": "index.js",
   "scripts": {
+    "lint-staged": "lint-staged",
     "start": "cross-env NODE_ENV=debug webpack serve --config config/webpack.config.ts",
     "test": "npm test",
     "prepare": "husky install"
