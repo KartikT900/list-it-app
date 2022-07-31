@@ -18,10 +18,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          git fetch --no-tags --depth=1 origin main
-          git checkout -b main
-          git checkout ${{ github.event.pull_request.head.sha }}
+        with:
+          fetch-depth: 0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
