@@ -12,7 +12,8 @@
       "preserveConstEnums": true,
       "strictNullChecks": true,
       "sourceMap": true,
-      "target": "ES2021"
+      "target": "ES2021",
+      "outDir": ""
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules"]

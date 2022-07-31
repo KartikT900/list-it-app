@@ -6,7 +6,7 @@ import path from 'path';
 
 const devMode: boolean = process.env.NODE_ENV !== 'production';
 
-const config: webpack.Configuration =  {
+const config: webpack.Configuration = {
   devServer: {
     compress: true,
     historyApiFallback: true,
@@ -14,28 +14,28 @@ const config: webpack.Configuration =  {
     port: 8000,
     client: {
       overlay: true,
-      logging: "warn"
+      logging: 'warn'
     },
     open: 'list/'
-    },
-    devtool: devMode
-      ? 'eval-cheap-module-source-map'
-      : 'cheap-module-source-map',
-  entry: ['./src/public-path.ts','./src/index.ts'],
+  },
+  devtool: devMode
+    ? 'eval-cheap-module-source-map'
+    : 'cheap-module-source-map',
+  entry: ['./src/public-path.ts', './src/index.ts'],
   mode: devMode ? 'development' : 'production',
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
-        exclude: /node_modules/,
-      },
-    ],
+        exclude: /node_modules/
+      }
+    ]
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-        template: `${path.join(__dirname, '../src')}/index.html`
+      template: `${path.join(__dirname, '../src')}/index.html`
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
@@ -48,7 +48,7 @@ const config: webpack.Configuration =  {
     publicPath: '/',
     filename: '[name].js',
     chunkFilename: '[name].js'
-  },
+  }
 };
 
 export default config;
