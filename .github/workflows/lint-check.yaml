@@ -27,4 +27,6 @@ jobs:
         env:
           CI: true
       - name: Lint check
-        run: npm run lint-staged
+        run: npm run lint
+      - name: Format code
+        run: npm run format
