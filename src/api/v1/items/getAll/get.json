@@ -1,0 +1,47 @@
+{
+    "owner": "John",
+    "items": [
+        {
+            "title": "Complete task 1",
+            "description": "Need to fetch groceries by today evening",
+            "status": {
+                "completed": false
+            } 
+        },
+        {
+            "title": "Complete task 2",
+            "description": "Need to fetch groceries by today evening",
+            "status": {
+                "completed": true
+            }
+        },
+        {
+            "title": "Complete task 3",
+            "description": "Need to fetch groceries by today evening",
+            "status": {
+                "completed": false
+            }
+        },
+        {
+            "title": "Complete task 4",
+            "description": "Need to fetch groceries by today evening",
+            "status": {
+                "completed": false
+            }
+        },
+        {
+            "title": "Complete task 5",
+            "description": "Need to fetch groceries by today evening",
+            "status": {
+                "completed": true
+            }
+        },
+        {
+            "title": "Complete task 6",
+            "description": "Need to fetch groceries by today evening",
+            "status": {
+                "completed": true
+            }
+        }
+    ]
+}

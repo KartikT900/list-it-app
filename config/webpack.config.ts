@@ -16,12 +16,12 @@ const config: webpack.Configuration = {
       overlay: true,
       logging: 'warn'
     },
-    open: 'list/'
+    open: '/list'
   },
   devtool: devMode
     ? 'eval-cheap-module-source-map'
     : 'cheap-module-source-map',
-  entry: ['./src/public-path.ts', './src/index.ts'],
+  entry: ['./src/public-path.ts', './src/index.tsx'],
   mode: devMode ? 'development' : 'production',
   module: {
     rules: [
