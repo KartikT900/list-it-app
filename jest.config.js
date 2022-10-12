@@ -29,6 +29,7 @@ module.exports = {
     '.eslintrc.js',
     '.babel.config.js',
     '<rootDir>/src/index.ts',
+    '<rootDir>/src/server.ts',
     './public',
     '_snapshots_'
   ],
