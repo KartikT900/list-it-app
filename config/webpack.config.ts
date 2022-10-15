@@ -3,7 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import 'webpack-dev-server';
 import path from 'path';
-import Dotenv from 'dotenv-webpack';
+const Dotenv = require('dotenv-webpack');
 
 const devMode: boolean = process.env.NODE_ENV !== 'production';
 
