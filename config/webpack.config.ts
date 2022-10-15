@@ -3,6 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import 'webpack-dev-server';
 import path from 'path';
+import Dotenv from 'dotenv-webpack';
 
 const devMode: boolean = process.env.NODE_ENV !== 'production';
 
@@ -37,7 +38,10 @@ const config: webpack.Configuration = {
     new HtmlWebpackPlugin({
       template: `${path.join(__dirname, '../src')}/index.html`
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new Dotenv({
+      systemvars: true
+    })
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
