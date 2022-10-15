@@ -1,5 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom/client';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 import App from 'components/App';
 
@@ -15,4 +16,12 @@ const rootElement: HTMLElement =
 
 const root = ReactDOM.createRoot(rootElement);
 
-root.render(<App />);
+root.render(
+  <Auth0Provider
+    clientId={process.env.AUTH0_CLIENTID ?? ''}
+    domain={process.env.AUTH0_DOMAIN ?? ''}
+    redirectUri="http://localhost:8000/list"
+  >
+    <App />
+  </Auth0Provider>
+);

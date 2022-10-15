@@ -36,6 +36,10 @@ module.exports = {
     'no-console': [
       process.env.NODE_ENV === 'debug' ? 0 : 2,
       { allow: ['warn', 'error'] }
+    ],
+    '@typescript-eslint/no-floating-promises': [
+      2,
+      { ignoreIIFE: true }
     ]
   }
 };
